@@ -1,0 +1,145 @@
+/* Contenedor de profesores */
+.contenedor-profesor {
+    background-color: #f4f6f9; /* Fondo claro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+/* Título */
+.titulo h1 {
+    color: #1e3a5f;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Formulario */
+.formProf {
+    background: #ffffff; /* Fondo blanco */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    color: #1e3a5f; /* Azul oscuro */
+    margin-top: 10px;
+}
+
+/* Campos de entrada */
+input {
+    background-color: #f9f9f9; /* Fondo claro */
+    color: #333; /* Texto oscuro */
+    padding: 10px;
+    border: 2px solid #1e3a5f; /* Borde azul oscuro */
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #0f253f; /* Azul más oscuro al enfocar */
+    background-color: #ffffff;
+}
+
+/* Botón */
+button {
+    background-color: #1e3a5f;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #14273f;
+}
+
+/* Tabla de profesores */
+.tabla-profesor {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tabla-profesor th, 
+.tabla-profesor td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.tabla-profesor th {
+    background-color: #1e3a5f;
+    color: white;
+    font-size: 16px;
+}
+
+.tabla-profesor td {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #000000; /* Texto negro */
+    font-size: 14px;
+}
+
+/* Alternar colores de filas */
+.tabla-profesor tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Botones de acciones */
+.eliminar, .bactualizar {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.eliminar {
+    background-color: #d9534f;
+    color: white;
+}
+
+.eliminar:hover {
+    background-color: #c9302c;
+}
+
+.actualizar {
+    background-color: #5bc0de;
+    color: white;
+}
+
+.actualizar:hover {
+    background-color: #31b0d5;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .contenedor-profesor {
+        width: 95%;
+        padding: 10px;
+    }
+
+    input, button {
+        font-size: 14px;
+    }
+}

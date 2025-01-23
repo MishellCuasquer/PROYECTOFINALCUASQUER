@@ -1,0 +1,103 @@
+
+.menu-container {
+    display: flex;
+    justify-content: space-between; /* Espaciado uniforme entre los botones */
+    align-items: center;
+    width: 100%; /* Ocupar todo el ancho de la pantalla */
+    background-color: #0a0a0a; /* Verde oscuro */
+    padding: 1rem;
+    position: fixed; /* Fijo en la parte superior */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Siempre visible encima de otros elementos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-container a {
+    text-decoration: none;
+    color: #ffffff; /* Blanco */
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    flex-grow: 1; /* Igual espacio para cada botón */
+    text-transform: uppercase;
+}
+
+.menu-container a:hover {
+    background-color: #ffffff; /* Fondo blanco al pasar el cursor */
+    color: #2e8b57; /* Texto verde oscuro */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor principal */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh; /* Ocupa toda la pantalla */
+    padding-top: 0px; /* Espaciado para que no tape el menú fijo */
+    background-image: url('https://static.vecteezy.com/system/resources/previews/004/493/181/non_2x/hospital-building-for-healthcare-background-illustration-with-ambulance-car-doctor-patient-nurses-and-medical-clinic-exterior-free-vector.jpg');
+    background-size: cover; /* Cubrir toda la pantalla */
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    color: #ffffff; /* Texto blanco sobre fondo */
+}
+
+/* Sección de descripción */
+.description-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #181a19;
+}
+
+.description-container h1 {
+    font-size: 2.5rem;
+    color: #161616; /* Verde oscuro */
+    margin-bottom: 1rem;
+}
+
+.description-container p {
+    font-size: 1.2rem;
+    color: #333333; /* Gris oscuro */
+    line-height: 1.6;
+}
+
+/* Imagen destacada */
+.featured-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Que abarque toda la pantalla */
+    position: fixed; /* Fija la imagen en la pantalla */
+    top: 40%; /* Ubica la imagen en la parte media de la pantalla */
+    left: 50%; /* Centra la imagen horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la posición exacta */
+    
+}
+
+.footer {
+    position: fixed; /* Fijo en la parte inferior */
+    bottom: 0; /* Pegado abajo */
+    left: 0;
+    width: 100%; /* Que abarque toda la pantalla */
+    background-color: #1e3a5f; /* Azul oscuro */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+

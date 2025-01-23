@@ -1,0 +1,79 @@
+/* Tabla de asignaciones */
+.tabla-asignacion {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tabla-asignacion th, 
+.tabla-asignacion td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.tabla-asignacion th {
+    background-color: #1e3a5f;
+    color: white;
+    font-size: 16px;
+    /* Eliminado text-transform: uppercase; */
+}
+
+.tabla-asignacion td {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #000000; /* Texto negro */
+    font-size: 14px;
+}
+
+/* Alternar colores de filas para mejor visibilidad */
+.tabla-asignacion tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Botones en la tabla */
+.eliminar, .actualizar {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.eliminar {
+    background-color: #d9534f;
+    color: white;
+}
+
+.eliminar:hover {
+    background-color: #c9302c;
+}
+
+.actualizar {
+    background-color: #5bc0de;
+    color: white;
+}
+
+.actualizar:hover {
+    background-color: #31b0d5;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .tabla-asignacion {
+        font-size: 12px;
+    }
+
+    .tabla-asignacion th,
+    .tabla-asignacion td {
+        padding: 8px;
+    }
+
+    .eliminar, .actualizar {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+}
